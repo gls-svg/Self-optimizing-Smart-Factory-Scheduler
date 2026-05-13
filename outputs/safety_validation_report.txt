@@ -1,0 +1,43 @@
+SAFETY VALIDATION REPORT
+========================
+
+Schedule: fcfs_schedule.csv
+Status: UNSAFE
+Total operations: 36
+Total violations: 4
+Machines: 6
+Jobs: 6
+Failure check: Failure file checked.
+
+Violations:
+- [machine_failure] Operation is scheduled during a machine failure window.
+- [machine_failure] Operation is scheduled during a machine failure window.
+- [machine_failure] Operation is scheduled during a machine failure window.
+- [machine_failure] Operation is scheduled during a machine failure window.
+
+Schedule: spt_schedule.csv
+Status: UNSAFE
+Total operations: 36
+Total violations: 3
+Machines: 6
+Jobs: 6
+Failure check: Failure file checked.
+
+Violations:
+- [machine_failure] Operation is scheduled during a machine failure window.
+- [machine_failure] Operation is scheduled during a machine failure window.
+- [machine_failure] Operation is scheduled during a machine failure window.
+
+Schedule: rl_schedule.csv
+Status: UNSAFE
+Total operations: 36
+Total violations: 4
+Machines: 6
+Jobs: 6
+Failure check: Failure file checked.
+
+Violations:
+- [machine_failure] Operation is scheduled during a machine failure window.
+- [machine_failure] Operation is scheduled during a machine failure window.
+- [machine_failure] Operation is scheduled during a machine failure window.
+- [machine_failure] Operation is scheduled during a machine failure window.
