@@ -1,0 +1,53 @@
+{
+  "timestamp": "2026-05-13 19:49:16.396225",
+  "lstm_results": {
+    "accuracy": 0.9571020007133484,
+    "precision": 0.788135593220339,
+    "recall": 0.8230088495575221,
+    "f1_score": 0.8051948051948052,
+    "auc": 0.9608198404312134,
+    "test_samples": 1049
+  },
+  "arima_results": {
+    "avg_rmse": 1.6962764614670744,
+    "avg_mae": 1.4953881206790145,
+    "machines_evaluated": 15,
+    "rmse_range": [
+      1.3813565123622706,
+      1.9458059344606218
+    ],
+    "mae_range": [
+      1.1852876232057308,
+      1.7394830864835766
+    ]
+  },
+  "comparison": {
+    "lstm_strengths": [
+      "Captures temporal dependencies",
+      "Multi-step ahead predictions",
+      "Handles nonlinear patterns"
+    ],
+    "lstm_weaknesses": [
+      "Requires sufficient training data",
+      "Slower inference",
+      "Black-box model"
+    ],
+    "arima_strengths": [
+      "Fast inference",
+      "Interpretable parameters",
+      "Good for stationary series"
+    ],
+    "arima_weaknesses": [
+      "Assumes stationarity",
+      "Separate model per machine",
+      "Single-step forecasting"
+    ]
+  },
+  "recommendations": [
+    "Use LSTM for failure prediction (better for multivariate patterns)",
+    "Use ARIMA for delay forecasting (simpler, faster)",
+    "Ensemble approach: combine both for robust predictions",
+    "Monitor both models in production",
+    "Retrain monthly with new data"
+  ]
+}
